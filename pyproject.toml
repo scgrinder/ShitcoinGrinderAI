@@ -1,0 +1,5 @@
+[tools.py2app.bundle.main]
+
+name = "SCGrinderAI+"
+script = "client.py"
+standalone = true
