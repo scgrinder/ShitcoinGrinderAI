@@ -126,10 +126,6 @@ SCGrinderAI+ follows a client-server architecture with the addition of a source 
 
 The black swan strategy is a powerful investment approach employed by SCGrinderAI+. It suggests investing a small percentage of your portfolio in high-risk investments, such as shitcoins. By buying a wide range of tokens recognized by the AI model, the strategy aims to capture the significant growth potential of a few tokens, which can outweigh any previous losses.
 
-## License
-
-The SCGrinderAI+ software is released under the [SCGrinderAI+ License](LICENSE). The client component is open-source and subject to the terms of the [Open Source License](LICENSE.client).
-
 ## Get the Early Access
 
 To get early access to SCGrinderAI+, follow these simple steps:
@@ -296,6 +292,13 @@ SCGrinderAI+ should now be up and running on your Windows VPS.
 
 For any inquiries or support, please contact our team at support@shitcoingrinder.xyz
 
+
+## License
+
+The SCGrinderAI+ software is released under the [SCGrinderAI+ License](LICENSE). The client component is open-source and subject to the terms of the [Open Source License](LICENSE.client).
+
+
 ---
 
 © 2023 SCGrinderAI+ | All Rights Reserved.
+
