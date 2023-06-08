@@ -72,8 +72,46 @@ pip install -r requirements.txt
 3. Clone the SC
 
 GrinderAI+ repository.
-4. Open the configuration file and paste your API KEY.
+4. Rename the configuration file from <code>settings.ini.example</code> to <code>settings.ini</code>.
 5. Start the SCGrinderAI+ client by running the command: `python scgrind.py`
+
+## Configuration
+
+The configuration file looks like that:
+
+<code>
+    [Account]
+    private_key = <your_private_key>
+    auth_token = <your_api_key>
+
+    [Source]
+    host = app.shitcoingrinder.xyz
+    port = 8081
+
+    [Network]
+    # BSC=56 | ETH=1
+    id = 56
+    rpc = https://bsc-dataseed1.binance.org/
+
+    [Trading]
+    # this is your max trade size expressed in percentage.
+    # Eg: 30 = 30% of the USDT in your wallet.
+    max_trade_size = 30
+    # Max lifetime of an open position, expressed in days.
+    position_max_lifetime = 30
+    # Take profit in %
+    take_profit = 200
+    # Position check interval, in minutes
+    check_interval = 5
+</code>
+
+Let's describe further some parameters:
+- <code>private_key</code>: your wallet private key. It's stored on your computer and it won't be sent to anyone.
+- <code>auth_token</code>: it's your apikey. You can find it in the [https://app.shitcoingrinder.xyz/dashboard](dashboard) 
+- <code>max_trade_size</code>: The maximum size of a trade your are intended to do, expressed in percentage of the total amount of USDT in your wallet. If you have 1000 USDT in your wallet and this parameter is set to 10, the maximum trade size for you will be 100 USDT. We advice to keep this value between 5 and 30%.
+- <code>take_profit</code>: Everytime you'll recieve a signal you'll open a position. This parameter means when to close the position and take the profit. If set to 200 it means a 2x.
+- <code>position_max_lifetime</code>: If a position doesn't hit the tp treeshold it will expire instead of remaing open forever. Set this value here expressed in days. If this parameter is set to 30, positions will be automatically closed after 30 days if the tp isn't reached before.
+- <code>check_interval</code>: The position status is checked periodically, default is every 5 minutes. Here you can set a custom value for that, but we strongly advice to don't set a value lower than 5 minutes, or the RPC might get overloaded.
 
 ## Architecture
 
