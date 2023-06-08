@@ -1,0 +1,22 @@
+[Account]
+private_key = <your_private_key>
+auth_token = <your_api_key>
+
+[Source]
+host = app.shitcoingrinder.xyz
+port = 8081
+
+[Network]
+# BSC=56 | ETH=1
+id = 56
+# replace this with an rpc node for the specified network
+rpc = https://bsc-dataseed1.binance.org/
+
+[Trading]
+# this is your max trade size expressed in percentage.
+# Eg: 30 = 30% of the USDT in your wallet.
+max_trade_size = 30
+# Max lifetime of an open position, expressed in days.
+position_max_lifetime = 30
+# Take profit in %
+take_profit = 200
