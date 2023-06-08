@@ -127,6 +127,7 @@ The black swan strategy is a powerful investment approach employed by SCGrinderA
 ## License
 
 The SCGrinderAI+ software is released under the [SCGrinderAI+ License](LICENSE). The client component is open-source and subject to the terms of the [Open Source License](LICENSE.client).
+
 ## Get the Early Access
 
 To get early access to SCGrinderAI+, follow these simple steps:
@@ -144,9 +145,7 @@ Please note that only the minimum required information (name, email, and passwor
 
 Join the early access program today and unleash the full potential of SCGrinderAI+!
 
-## Installation on VPS
-
-# SCGrinderAI+ - Installation and Setup Guide
+# Installation on VPS
 
 ## Introduction
 
