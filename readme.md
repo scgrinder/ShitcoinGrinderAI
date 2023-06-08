@@ -1,5 +1,9 @@
 # ShitCoinGrinderAI+
 
+<div style="background-color: rgba(0,0,0); text-align: center; margin-bottom: 20px">
+    <img src="assets/logo.png" alt="SCGrinderAI+ Logo" style="width: 200px; height: auto;">
+</div>
+
 SCGrinderAI+ is an innovative software that leverages advanced AI technology to revolutionize your approach to the shitcoin market. With its powerful AI model trained on billions of data points, SCGrinderAI+ identifies high-potential tokens and applies the lucrative black swan strategy for maximum profitability.
 
 ## Table of Contents
