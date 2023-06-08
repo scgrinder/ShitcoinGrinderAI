@@ -17,6 +17,8 @@ SCGrinderAI+ is an innovative software that leverages advanced AI technology to 
 - [Architecture](#architecture)
 - [Black Swan Strategy](#black-swan-strategy)
 - [Early Access](#early-access)
+- [Installation on VPS](#installation-on-vps)
+- [Contact Us](#contact-us)
 - [License](#license)
 
 ## Introduction
