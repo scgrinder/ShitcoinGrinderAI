@@ -107,7 +107,7 @@ The configuration file looks like that:
 
 Let's describe further some parameters:
 - <code>private_key</code>: your wallet private key. It's stored on your computer and it won't be sent to anyone.
-- <code>auth_token</code>: it's your apikey. You can find it in the [https://app.shitcoingrinder.xyz/dashboard](dashboard) 
+- <code>auth_token</code>: it's your apikey. You can find it in the [dashboard](https://app.shitcoingrinder.xyz/dashboard) 
 - <code>max_trade_size</code>: The maximum size of a trade your are intended to do, expressed in percentage of the total amount of USDT in your wallet. If you have 1000 USDT in your wallet and this parameter is set to 10, the maximum trade size for you will be 100 USDT. We advice to keep this value between 5 and 30%.
 - <code>take_profit</code>: Everytime you'll recieve a signal you'll open a position. This parameter means when to close the position and take the profit. If set to 200 it means a 2x.
 - <code>position_max_lifetime</code>: If a position doesn't hit the tp treeshold it will expire instead of remaing open forever. Set this value here expressed in days. If this parameter is set to 30, positions will be automatically closed after 30 days if the tp isn't reached before.
