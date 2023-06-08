@@ -57,7 +57,16 @@ SCGrinderAI+ is a groundbreaking software that automates the analysis of countle
   - Save the script to a folder on your computer.
   - Open a command prompt, navigate to the folder where you saved the script, and run the command: `python get-pip.py`
 
-### Installing Requirements
+
+## Getting Started
+
+1. Clone the SCGrinderAI+ repository: <code>git clone https://github.com/JediKunnow/ShitcoinGrinderAI</code>
+2. Rename the configuration file from <code>settings.ini.example</code> to <code>settings.ini</code>.
+3. Paste private key and api key in the configuration file (see [Configuration](#configuration)).
+4. Install requirements (see [Installing requirements](#installing-requirements))
+5. Start the client with <code>python3 client.py</code>
+
+### Installing requirements
 
 To install the required packages for SCGrinderAI+, navigate to the project directory and run the following command:
 
@@ -65,24 +74,14 @@ To install the required packages for SCGrinderAI+, navigate to the project direc
 pip install -r requirements.txt
 ```
 
-## Getting Started
-
-1. Sign up for free on [SCGrinderAI+ Registration](https://app.shitcoingrinder.xyz/register) to retrieve your API KEY.
-2. Once registered, your API KEY will be visible in the dashboard.
-3. Clone the SC
-
-GrinderAI+ repository.
-4. Rename the configuration file from <code>settings.ini.example</code> to <code>settings.ini</code>.
-5. Start the SCGrinderAI+ client by running the command: `python scgrind.py`
-
-## Configuration
+### Configuration
 
 The configuration file looks like that:
 
 <code>
     [Account]
-    private_key = <your_private_key>
-    auth_token = <your_api_key>
+    private_key = 'your_private_key'
+    auth_token = 'your_api_key'
 
     [Source]
     host = app.shitcoingrinder.xyz
@@ -144,6 +143,153 @@ By signing up and obtaining an API KEY, you gain access to the early version of 
 Please note that only the minimum required information (name, email, and password) is needed for the sign-up process. We value your privacy and ensure that your personal information is handled securely.
 
 Join the early access program today and unleash the full potential of SCGrinderAI+!
+
+## Installation on VPS
+
+# SCGrinderAI+ - Installation and Setup Guide
+
+## Introduction
+
+This guide will walk you through the process of installing, configuring, and using SCGrinderAI+ on a VPS (Virtual Private Server). SCGrinderAI+ is an innovative software that leverages advanced AI technology to revolutionize your approach to the shitcoin market. By following the steps outlined in this guide, you'll be able to set up SCGrinderAI+ on both Linux and Windows VPS environments.
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Installation on Linux VPS](#installation-on-linux-vps)
+  - [Step 1: Connect to your Linux VPS](#step-1-connect-to-your-linux-vps)
+  - [Step 2: Update System Packages](#step-2-update-system-packages)
+  - [Step 3: Install Python and Pip](#step-3-install-python-and-pip)
+  - [Step 4: Clone the SCGrinderAI+ Repository](#step-4-clone-the-scgrinderai-repository)
+  - [Step 5: Install Required Packages](#step-5-install-required-packages)
+  - [Step 6: Configure SCGrinderAI+](#step-6-configure-scgrinderai)
+  - [Step 7: Start SCGrinderAI+](#step-7-start-scgrinderai)
+- [Installation on Windows VPS](#installation-on-windows-vps)
+  - [Step 1: Connect to your Windows VPS](#step-1-connect-to-your-windows-vps)
+  - [Step 2: Install Python and Pip](#step-2-install-python-and-pip)
+  - [Step 3: Clone the SCGrinderAI+ Repository](#step-3-clone-the-scgrinderai-repository)
+  - [Step 4: Install Required Packages](#step-4-install-required-packages)
+  - [Step 5: Configure SCGrinderAI+](#step-5-configure-scgrinderai)
+  - [Step 6: Start SCGrinderAI+](#step-6-start-scgrinderai)
+- [Usage](#usage)
+- [Troubleshooting](#troubleshooting)
+- [License](#license)
+
+## Prerequisites
+
+Before you begin, make sure you have the following prerequisites:
+
+- A VPS with Linux or Windows operating system.
+- SSH access to your VPS for Linux installations.
+- Remote desktop access to your VPS for Windows installations.
+- Python 3 installed on your VPS.
+
+## Installation on Linux VPS
+
+### Step 1: Connect to your Linux VPS
+
+Use SSH to connect to your Linux VPS. You can use tools like PuTTY (Windows) or the terminal (macOS/Linux) to establish the SSH connection.
+
+```bash
+ssh user@your_server_ip
+```
+
+### Step 2: Update System Packages
+
+Before installing any software, it's recommended to update your system packages to the latest versions.
+
+```bash
+sudo apt update
+sudo apt upgrade -y
+```
+
+### Step 3: Install Python and Pip
+
+Install Python 3 and Pip package manager on your Linux VPS.
+
+```bash
+sudo apt install python3 python3-pip -y
+```
+
+### Step 4: Clone the SCGrinderAI+ Repository
+
+Clone the SCGrinderAI+ repository to your VPS.
+
+```bash
+git clone https://github.com/your_username/SCGrinderAI.git
+```
+
+### Step 5: Install Required Packages
+
+Navigate to the project directory and install the required packages.
+
+```bash
+cd SCGrinderAI
+pip3 install -r requirements.txt
+```
+
+### Step 6: Configure SCGrinderAI+
+
+Edit the configuration file to provide your API key.
+
+```bash
+nano settings.ini
+```
+
+Replace `your api key` with your actual API key.
+Replace `private key` with your actual private key.
+
+### Step 7: Start SCGrinderAI+
+
+Start SCGrinderAI+ by running the following command.
+
+```bash
+python3 client.py
+```
+
+SCGrinderAI+ should now be up and running on your Linux VPS.
+
+## Installation on Windows VPS
+
+### Step 1: Connect to your Windows VPS
+
+Use remote desktop access to connect to your Windows VPS.
+
+### Step 2: Install Python and Pip
+
+Download and install the latest version of Python 3 from the official Python website: https://www.python.org/downloads/
+
+During the installation process, make sure to check the option to add Python to the system PATH.
+
+### Step 3: Clone the SCGrinderAI+ Repository
+
+Open a command prompt on your Windows VPS and clone the SCGrinderAI+ repository.
+
+```bash
+git clone https://github.com/your_username/SCGrinderAI.git
+```
+
+### Step 4: Install Required Packages
+
+Navigate to the project directory and install the required packages.
+
+```bash
+cd SCGrinderAI
+pip install -r requirements.txt
+```
+
+### Step 5: Configure SCGrinderAI+
+
+Edit the configuration file (`config.ini`) to provide your API key.
+
+### Step 6: Start SCGrinderAI+
+
+Launch the SCGrinderAI+ client by running the following command.
+
+```bash
+python client.py
+```
+
+SCGrinderAI+ should now be up and running on your Windows VPS.
+
 
 ## Contact Us
 
